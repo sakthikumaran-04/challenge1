@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height:100dvh;
+    width:100%;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#image{
+    min-width:50%;
+}
+img{
+    height:100%;
+    width:100%;
+    border-radius: 10px 0px 0px 10px;
+}
+#container{
+    display:flex;
+    justify-content: center;
+    height:450px;
+    width:700px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 10px;
+}
+#content{
+    height:100%;
+    padding:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+button{
+    display:flex;
+    border:none;
+    color:white;
+    background-color:  hsl(158, 36%, 37%);
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width:100%;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+}
+button img{
+    height:20px;
+    width:20px;
+    margin-right:10px;
+}
+button:hover{
+    background-color:  hsl(212, 21%, 14%);
+    cursor:pointer;
+}
+.heading{
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat,sans-serif;
+    letter-spacing: 3px;
+    font-size:14px;
+    font-weight: 500;
+}
+.title{
+    color:hsl(212, 21%, 14%);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: Fraunces;
+    line-height: normal;
+}
+.text{
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+}
+#price{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.oprice{
+    color:  hsl(158, 36%, 37%);
+    font-size: 40px;
+    font-family: Fraunces;
+}
+.pprice{
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat,sans-serif;
+    text-decoration: line-through;
+}
+@media only screen and (max-width: 425px) {
+    #container{
+        flex-direction: column;
+        width:90%;
+        height:300px;
+        height:auto;
+        zoom:70%; 
+    }
+    img{
+        height:300px;
+        width:100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+    p,button{
+        padding-bottom: 15px;
+    }
+    button p{
+        padding-bottom: 0px;
+    }
+  }
